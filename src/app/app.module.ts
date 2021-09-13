@@ -17,6 +17,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { GcuentasComponent } from './gcuentas/gcuentas.component';
 import { GtarjetasComponent } from './gtarjetas/gtarjetas.component';
 import { RegistroComponent } from './registro/registro.component';
+import { GprestamosComponent } from './gprestamos/gprestamos.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RegistroComponent } from './registro/registro.component';
     ClientesComponent,
     GcuentasComponent,
     GtarjetasComponent,
-    RegistroComponent
+    RegistroComponent,
+    GprestamosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,8 @@
+import { GprestamosComponent } from './gprestamos/gprestamos.component';
+import { RolesComponent } from './roles/roles.component';
+import { GtarjetasComponent } from './gtarjetas/gtarjetas.component';
+import { GcuentasComponent } from './gcuentas/gcuentas.component';
+import { ClientesComponent } from './clientes/clientes.component';
 import { RegistroComponent } from './registro/registro.component';
 import { TarjetasComponent } from './tarjetas/tarjetas.component';
 import { PrestamosComponent } from './prestamos/prestamos.component';
@@ -42,6 +47,26 @@ const routes: Routes = [
   {
     path: "Registro",
     component: RegistroComponent
+  },
+  {
+    path: "Clientes",
+    component: ClientesComponent
+  },
+  {
+    path: "GCuentas",
+    component: GcuentasComponent
+  },
+  {
+    path: "GTarjetas",
+    component: GtarjetasComponent
+  },
+  {
+    path: "Roles",
+    component: RolesComponent
+  },
+  {
+    path: "GPrestamos",
+    component: GprestamosComponent
   }
 ];
 

@@ -1,1 +1,39 @@
-<p>roles works!</p>
+<app-admin></app-admin>
+<h1>Gestion de Roles</h1>
+<div class="container">
+    <div class="row">
+        <section id = "roles" class="col-3">
+            <h4>Nuevo Rol</h4>
+            <br>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Descripción"></textarea>
+            </div>
+            <button id="btn-crear"> Nuevo </button>
+            <br>
+        </section>
+        <section id ="groles" class="col">
+            <h4>Gestion de Roles</h4>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1 editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="#">
+                    </div>
+                    <div class="col editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Nombre">
+                    </div>
+                    <div class="col editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Descripción">
+                    </div>
+                    <div class="col editar">
+                        <button id="btn-editar" class="col"> Editar </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+    </div>
+</div>

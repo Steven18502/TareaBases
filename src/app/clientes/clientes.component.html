@@ -1,1 +1,70 @@
-<p>clientes works!</p>
+<app-admin></app-admin>
+<h1>Gestion de Clientes</h1>
+<div class="container">
+    <div class="row">
+        <section id = "clientes" class="col-3">
+            <h4>Agregar Cliente</h4>
+            <br>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Nombre Completo">
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Cédula">
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Dirección">
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Teléfono">
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Ingreso Mensual">
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Usuario">
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tipo Cliente
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><p class="dropdown-item" >Físico</p></li>
+                  <li><p class="dropdown-item" href="#">Jurídico</p></li>
+                </ul>
+              </div>
+              <br>
+            <button id="btn-agregar"> Agregar </button>
+            <br>
+        </section>
+        <section id ="gclientes" class="col">
+            <h4>Gestion de Clientes</h4>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1 editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="#">
+                    </div>
+                    <div class="col editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Nombre">
+                    </div>
+                    <div class="col editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Dirección">
+                    </div>
+                    <div class="col editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Teléfono">
+                    </div>
+                    <div class="col editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Ingreso Mensual">
+                    </div>
+                    <div class="col editar">
+                        <button id="btn-editar" class="col"> Editar </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+    </div>
+</div>
