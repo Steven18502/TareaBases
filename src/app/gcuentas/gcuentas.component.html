@@ -1,26 +1,27 @@
 <app-admin></app-admin>
 <h1>Gestion de Cuentas</h1>
+<body>
 <div class="container">
-    <div class="row">
-        <section id = "cuentas" class="col-3">
+    <div class="row justify-content-md-center">
+        <form id = "cuentas" class="col-3" action="">
             <h4>Agregar Cuenta</h4>
             <br>
             <div class="mb-4">
-                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Número de Cuenta">
+                <input type="text"  class="form-control" id="exampleInputPassword1" placeholder="Número de Cuenta" [(ngModel)] = "numero" name="1">
             </div>
             <div class="mb-4">
-                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Descripción">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Descripción" [(ngModel)] = "desc" name = "1" >
             </div>
             <div class="mb-4">
-                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Cliente">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Cliente" [(ngModel)] = "cliente" name = "1" >
             </div>
             <div class="dropdown">
                 <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   Tipo Cuenta
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><p class="dropdown-item" >Ahorros</p></li>
-                  <li><p class="dropdown-item" >Regular</p></li>
+                  <li><p class="dropdown-item" (click) = "setTipo(1)">Ahorros</p></li>
+                  <li><p class="dropdown-item" (click) = "setTipo(2)">Regular</p></li>
                 </ul>
               </div>
               <br>
@@ -29,41 +30,82 @@
                   Moneda
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><p class="dropdown-item" >Euros</p></li>
-                  <li><p class="dropdown-item" >Colones</p></li>
-                  <li><p class="dropdown-item" >Dolares</p></li>
+                  <li><p class="dropdown-item" (click) = "setMoneda(1)">Euros</p></li>
+                  <li><p class="dropdown-item" (click) = "setMoneda(2)">Colones</p></li>
+                  <li><p class="dropdown-item" (click) = "setMoneda(3)">Dolares</p></li>
                 </ul>
               </div>
               <br>
-            <button id="btn-agregar"> Agregar </button>
+            <button id="btn-agregar" (click) = "agregar()"> Agregar </button>
             <br>
-        </section>
+          </form>
         <section id ="gcuentas" class="col">
             <h4>Gestion de Cuentas</h4>
             <br>
             <div class="container">
                 <div class="row">
                     <div class="col-1 editar">
-                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="#">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="#" [(ngModel)] = "pos" name = "1">
                     </div>
                     <div class="col editar">
-                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Descripción">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Descripción" [(ngModel)] = "desc_edit" name="1">
                     </div>
                     <div class="col dropdown">
                         <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                           Tipo Cuenta
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><p class="dropdown-item" >Ahorros</p></li>
-                          <li><p class="dropdown-item" >Regular</p></li>
+                          <li><p class="dropdown-item" (click) = "setTipo(1)">Ahorros</p></li>
+                          <li><p class="dropdown-item" (click) = "setTipo(2)">Regular</p></li>
                         </ul>
                       </div>
                     <div class="col editar">
-                        <button id="btn-editar" class="col"> Editar </button>
+                        <button id="btn-editar" (click) = "editar()" class="col"> Editar </button>
                     </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-2">
+                    Número
+                  </div>
+                  <div class="col-2">
+                    Descripcíon
+                  </div>
+                  <div class="col-2">
+                    Cliente
+                  </div>
+                  <div class="col-2">
+                    Tipo
+                  </div>
+                  <div class="col-2">
+                    Moneda
+                  </div>
+                  <div class="col-2">
+                  </div>
+                </div>
+                <br>
+                <div class="row" *ngFor = "let cuenta of cuentas">
+                  <div class="col-2">
+                    {{cuenta.num}}
+                  </div>
+                  <div class="col-2">
+                    {{cuenta.desc}}
+                  </div>
+                  <div class="col-2">
+                    {{cuenta.cliente}}
+                  </div>
+                  <div class="col-2">
+                    {{cuenta.tipo}}
+                  </div>
+                  <div class="col-2">
+                    {{cuenta.moneda}}
+                  </div>
+                  <a class="col-2" routerLink="#"  (click) = "eliminar(cuenta)">eliminar</a>
+                  <br>
                 </div>
             </div>
             <br>
         </section>
     </div>
 </div>
+</body>
