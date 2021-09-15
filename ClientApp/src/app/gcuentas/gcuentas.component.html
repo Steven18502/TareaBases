@@ -1,0 +1,69 @@
+<app-admin></app-admin>
+<h1>Gestion de Cuentas</h1>
+<div class="container">
+    <div class="row">
+        <section id = "cuentas" class="col-3">
+            <h4>Agregar Cuenta</h4>
+            <br>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Número de Cuenta">
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Descripción">
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Cliente">
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tipo Cuenta
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><p class="dropdown-item" >Ahorros</p></li>
+                  <li><p class="dropdown-item" >Regular</p></li>
+                </ul>
+              </div>
+              <br>
+              <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Moneda
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><p class="dropdown-item" >Euros</p></li>
+                  <li><p class="dropdown-item" >Colones</p></li>
+                  <li><p class="dropdown-item" >Dolares</p></li>
+                </ul>
+              </div>
+              <br>
+            <button id="btn-agregar"> Agregar </button>
+            <br>
+        </section>
+        <section id ="gcuentas" class="col">
+            <h4>Gestion de Cuentas</h4>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1 editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="#">
+                    </div>
+                    <div class="col editar">
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Descripción">
+                    </div>
+                    <div class="col dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Tipo Cuenta
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><p class="dropdown-item" >Ahorros</p></li>
+                          <li><p class="dropdown-item" >Regular</p></li>
+                        </ul>
+                      </div>
+                    <div class="col editar">
+                        <button id="btn-editar" class="col"> Editar </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+#roles{
+    background-color: darkgrey;
+    display: inline-block;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+#groles{
+    background-color: darkgrey;
+    display: inline-block;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+#btn-crear{
+    border-radius: 10px;
+    padding: 5px;
+    width: 68px;
+    margin-left: 77%;
+    text-align: center;
+}
+#btn-editar{
+    border-radius: 10px;
+    padding: 5px;
+    width: 68px;
+    height: 41px;
+    margin-left: 2%;
+    text-align: center;
+}
+.container{
+    margin-left: 0%;
+}
+.editar{
+    margin: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
