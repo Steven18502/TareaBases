@@ -15,6 +15,8 @@ import { AppComponent } from './app.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
+// Se definen las rutas que llevan entre las diferentes vistas de la aplicacion utilizando componentes
 const routes: Routes = [
   {
     path: "",

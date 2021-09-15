@@ -1,13 +1,17 @@
+<!--Se utiliza la clase container para aplicar las propiedades de grid de bootstrap -->
+<!-- Se utiliza la funcion (click) de una etiqueta para vincular una funcion en el .ts con el evento click-->>
+<!--Se utiliza la funcion ngModel para vincular los valores de entrada del input con variables en un .ts-->
+<!-- Se utilizan {{}} para mostrar informacion que en este caso esta ligada a los atributos de un objeto de la clase cuenta-->
 <app-admin></app-admin>
 <h1>Gestion de Cuentas</h1>
 <body>
-<div class="container">
+<div class="container"> 
     <div class="row justify-content-md-center">
         <form id = "cuentas" class="col-3" action="">
             <h4>Agregar Cuenta</h4>
             <br>
             <div class="mb-4">
-                <input type="text"  class="form-control" id="exampleInputPassword1" placeholder="Número de Cuenta" [(ngModel)] = "numero" name="1">
+                <input type="text"  class="form-control" id="exampleInputPassword1" placeholder="Número de Cuenta" [(ngModel)] = "numero" name="1"> 
             </div>
             <div class="mb-4">
                 <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Descripción" [(ngModel)] = "desc" name = "1" >
@@ -20,7 +24,7 @@
                   Tipo Cuenta
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><p class="dropdown-item" (click) = "setTipo(1)">Ahorros</p></li>
+                  <li><p class="dropdown-item" (click) = "setTipo(1)">Ahorros</p></li> 
                   <li><p class="dropdown-item" (click) = "setTipo(2)">Regular</p></li>
                 </ul>
               </div>
