@@ -19,6 +19,8 @@ import { GcuentasComponent } from './gcuentas/gcuentas.component';
 import { GtarjetasComponent } from './gtarjetas/gtarjetas.component';
 import { RegistroComponent } from './registro/registro.component';
 import { GprestamosComponent } from './gprestamos/gprestamos.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { GprestamosComponent } from './gprestamos/gprestamos.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
