@@ -1,3 +1,6 @@
+/*Se especifican propiedades css para algunas etiquetas del html mediante sus ids
+*/
+
 #Transferencia{
     background-color: darkgrey;
     display: inline-block;
@@ -12,32 +15,3 @@
     margin-left: 1%;
     border-radius: 10px;
 }
-
-#transferencias
- {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  #transferencias
-   td, #transferencias
-   th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #transferencias
-   tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #transferencias
-   tr:hover {background-color: #ddd;}
-  
-  #transferencias
-   th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: cornflowerblue;
-    color: white;
-  }
