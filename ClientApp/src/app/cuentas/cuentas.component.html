@@ -4,14 +4,18 @@
 <br>
 <section id="Transferencia">
     <h6>Realizar Transferencia</h6>
-    <input class="form-control form-control-sm" type="text" placeholder="Cuenta destino" aria-label=".form-control-sm example">
+    <h6>Cuenta destino</h6>
+    <input [(ngModel)]="transferencias.cuentaDestino" />
+    <!-- <input class="form-control form-control-sm" type="text" placeholder="Cuenta destino" aria-label=".form-control-sm example"> -->
     <br>
     <div class="input-group mb-3">
+      <h6>Monto</h6>
         <span class="input-group-text">$</span>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Monto">
+        <input [(ngModel)]="transferencias.monto" />
+        <!--<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Monto">-->
         <span class="input-group-text">.00</span>
       </div>
-      <button>Realizar</button>
+      <button (click)="addTransferencia()">Realizar</button>
       
 </section>
 <br>

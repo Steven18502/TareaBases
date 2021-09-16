@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MovCuentas">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#3F51B5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Movimientos realizados en cada cuenta"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewMovs"
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:layout_marginTop="10dp"
+                android:text=" Lista de movimientos:"
+                android:textColor="#0B0B0B"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3F51B5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Tarjetas asociadas a cada cuenta"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewTar"
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:layout_marginTop="10dp"
+                android:text="Lista de tarjetas:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
