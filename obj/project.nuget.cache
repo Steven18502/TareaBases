@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "URJfyXilt1r+7cWtH1nchJofZ8VyxTjNdScuLqguOKYQxzNWzZrHPhN0yhxQGu4iumOVtn6HLjAQWFxsZaTIng==",
+  "dgSpecHash": "RCrHcpynCWK3SP+TEXoE9uvNaw3V5Ud5q3yv+odKdckS+N9INW9j7ogiOmuLy3JgFnRF6iSbnkB3c5655+DxpQ==",
   "success": true,
-  "projectFilePath": "/home/chago/Documents/Bases/TecBank/TecBank.csproj",
+  "projectFilePath": "/home/chago/Documents/GitHub/TareaBases/TecBank.csproj",
   "expectedPackageFiles": [
     "/home/chago/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/chago/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

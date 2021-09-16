@@ -7269,11 +7269,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/chago/Documents/Bases/TecBank/TecBank.csproj",
+      "projectUniqueName": "/home/chago/Documents/GitHub/TareaBases/TecBank.csproj",
       "projectName": "TecBank",
-      "projectPath": "/home/chago/Documents/Bases/TecBank/TecBank.csproj",
+      "projectPath": "/home/chago/Documents/GitHub/TareaBases/TecBank.csproj",
       "packagesPath": "/home/chago/.nuget/packages/",
-      "outputPath": "/home/chago/Documents/Bases/TecBank/obj/",
+      "outputPath": "/home/chago/Documents/GitHub/TareaBases/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/chago/.nuget/NuGet/NuGet.Config"

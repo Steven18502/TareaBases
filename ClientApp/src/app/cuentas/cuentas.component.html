@@ -11,6 +11,7 @@
         <span class="input-group-text">.00</span>
       </div>
       <button>Realizar</button>
+      
 </section>
 <br>
 <br>
@@ -18,3 +19,23 @@
     <h6>Manejo de Cuentas</h6>
 
 </section>
+
+<hr>
+
+<h1>Table using JSON Server API</h1>
+<hr>
+
+<table id="transferencias">
+
+  <tr>
+    <th *ngFor="let col of columns">
+      {{col}}
+    </th>
+  </tr>
+  <tr *ngFor="let transferencia of transferencias">
+    <td *ngFor="let col of index">
+      {{transferencia[col]}}
+    </td>
+  </tr>
+
+</table>
